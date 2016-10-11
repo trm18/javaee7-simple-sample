@@ -31,16 +31,18 @@
     </developers>
     <distributionManagement>
       <repository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://localhost:8088/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://localhost:8088/repository/maven-snapshots/</url>
-        </snapshotRepository>  
-    </distributionManagement>
+        <id>releases</id>
+        <name>Releases</name>
+        <url>http://localHost:8088/repository/YourRepo/</url>
+    </repository>
+
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>Snapshots</name>
+        <url>http://localHost:8088/repository/YourRepo/</url>
+    </snapshotRepository>
+</distributionManagement>
+	  
     <build>
     	<finalName>javaee7-simple-sample</finalName>
         <pluginManagement>
